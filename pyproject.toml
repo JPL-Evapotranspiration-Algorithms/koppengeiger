@@ -3,7 +3,7 @@ requires = ["setuptools>=60", "setuptools-scm>=8.0", "wheel"]
 
 [project]
 name = "koppengeiger"
-version = "1.0.2"
+version = "1.0.3"
 description = "generates rasters of Köppen-Geiger land-cover classification"
 readme = "README.md"
 authors = [
@@ -21,3 +21,6 @@ requires-python = ">=3.11"
 
 [tool.setuptools.package-data]
 koppengeiger = ["*.txt", "*.tif"]
+
+[project.urls]
+"Homepage" = "https://github.com/JPL-Evapotranspiration-Algorithms/koppengeiger"
