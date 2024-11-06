@@ -6,6 +6,14 @@ The `koppengeiger` Python package generates rasters of [Köppen-Geiger land-cove
 [gregory.h.halverson@jpl.nasa.gov](mailto:gregory.h.halverson@jpl.nasa.gov)<br>
 NASA Jet Propulsion Laboratory 329G
 
+## Installation
+
+This package is available on PyPi as a [pip package](https://pypi.org/project/koppengeiger/) called `koppengeiger`.
+
+```bash
+pip install koppengeiger
+```
+
 ## Loading Köppen-Geiger Land-Cover Classification Raster
 
 The function `load_koppen_geiger` is used to load a subset of the Köppen-Geiger land-cover classification raster as a `rasters.Raster` object. The Köppen-Geiger land-cover classification is a widely used vegetation and climate classification system. More details about this classification system can be found at Koppen Earth.
