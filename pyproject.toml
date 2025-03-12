@@ -3,7 +3,7 @@ requires = ["setuptools>=60", "setuptools-scm>=8.0", "wheel"]
 
 [project]
 name = "koppengeiger"
-version = "1.0.4"
+version = "1.0.3"
 description = "generates rasters of Köppen-Geiger land-cover classification"
 readme = "README.md"
 authors = [
@@ -18,6 +18,16 @@ dependencies = [
 ]
 
 requires-python = ">=3.10"
+
+[project.optional-dependencies]
+dev = [
+    "build",
+    "pytest>=6.0",
+    "pytest-cov",
+    "jupyter",
+    "pytest",
+    "twine"
+]
 
 [tool.setuptools.package-data]
 koppengeiger = ["*.txt", "*.tif"]
