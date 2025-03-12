@@ -1,5 +1,7 @@
 # `koppengeiger` Python Package
 
+[![CI](https://github.com/JPL-Evapotranspiration-Algorithms/koppengeiger/actions/workflows/ci.yml/badge.svg)](https://github.com/JPL-Evapotranspiration-Algorithms/koppengeiger/actions/workflows/ci.yml)
+
 The `koppengeiger` Python package generates rasters of [Köppen-Geiger land-cover classification](https://koppen.earth/).
 
 [Gregory H. Halverson](https://github.com/gregory-halverson-jpl) (they/them)<br>
