@@ -5,7 +5,7 @@ from rasters import Raster, RasterGeometry
 
 KOPPEN_GEIEGER_FILENAME = join(abspath(dirname(__file__)), "KG_simplified_uint8.tif")
 
-def load_koppen_geiger(geometry: RasterGeometry = None) -> Raster:
+def load_koppen_geiger(geometry: RasterGeometry = None, resampling: str = "nearest") -> Raster:
     """
     Load the Köppen-Geiger land-cover classification raster.
 
@@ -27,9 +27,9 @@ def load_koppen_geiger(geometry: RasterGeometry = None) -> Raster:
     ----------
     Beck, H. E., Zimmermann, N. E., McVicar, T. R., Vergopolan, N., Berg, A., & Wood, E. F. (2018). Present and future Köppen-Geiger climate classification maps at 1-km resolution. Scientific Data, 5, 180214.
     """
-    koppen_geiger = Raster.open(KOPPEN_GEIEGER_FILENAME)
+    koppen_geiger = Raster.open(KOPPEN_GEIEGER_FILENAME, geometry=geometry, resampling=resampling)
 
-    if geometry is not None:
-        koppen_geiger = koppen_geiger.to_geometry(geometry)
+    # if geometry is not None:
+    #     koppen_geiger = koppen_geiger.to_geometry(geometry)
 
     return koppen_geiger

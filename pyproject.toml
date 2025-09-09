@@ -3,7 +3,7 @@ requires = ["setuptools>=60", "setuptools-scm>=8.0", "wheel"]
 
 [project]
 name = "koppengeiger"
-version = "1.0.5"
+version = "1.1.0"
 description = "generates rasters of Köppen-Geiger land-cover classification"
 readme = "README.md"
 authors = [
@@ -14,7 +14,8 @@ classifiers = [
     "Operating System :: OS Independent",
 ]
 dependencies = [
-    "rasters"
+    "ECOv002-calval-tables>=1.6.0",
+    "rasters>=1.9.0",
 ]
 
 requires-python = ">=3.10"
@@ -31,6 +32,9 @@ dev = [
 
 [tool.setuptools.package-data]
 koppengeiger = ["*.txt", "*.tif"]
+
+[tool.setuptools.packages.find]
+exclude = ["notebooks*"]
 
 [project.urls]
 "Homepage" = "https://github.com/JPL-Evapotranspiration-Algorithms/koppengeiger"
